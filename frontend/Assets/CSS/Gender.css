@@ -1,0 +1,48 @@
+.gender-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gender-box {
+    flex: 1;
+    position: relative;
+    margin: 10px;
+    overflow: hidden; /* Ensure the blur effect does not overflow */
+    max-width: 400px; /* Increase the maximum width for larger squares */
+    max-height: 400px; /* Ensure the height matches the width for a square shape */
+}
+
+.gender-image {
+    width: 100%; /* Make the image take full width of the box */
+    height: 100%; /* Ensure the image takes full height of the box */
+    object-fit: cover; /* Ensure the image covers the box without distortion */
+    display: block;
+    border-radius: 3px; /* Add border radius to the image */
+    aspect-ratio: 1 / 1; /* Ensure the image maintains a square shape */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+}
+
+.gender-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the label/button */
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    color: rgb(255, 255, 255); /* White text color */
+    padding: 10px 20px;
+    font-size: 2rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 3px; /* Add border radius to the label */
+    font-weight: bold; /* Bold text */
+}
+
+.gender-box:hover .gender-label {
+    background-color: rgba(255, 255, 255, 0); /* Keep background transparent on hover */
+    color: rgb(255, 255, 255); /* Keep text white on hover */
+}
+
+.gender-box:hover .gender-image {
+    transform: scale(0.9); /* Zoom out the image while the box is hovered */
+}

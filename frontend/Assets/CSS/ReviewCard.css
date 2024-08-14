@@ -1,0 +1,30 @@
+/* src/Assets/CSS/ReviewCard.css */
+.review-card {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.review-card:hover {
+    transform: translateY(-5px); /* Lift the box slightly on hover */
+}
+.star-rating {
+    font-size: 1.2rem;
+    color: #ff6600;
+}

@@ -1,0 +1,126 @@
+.cart-container {
+    padding: 20px;
+    
+}
+
+.page-heading {
+    font-size: 2rem; /* Larger font size for heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333;
+}
+
+.cart-content {
+    display: flex;
+    justify-content: space-between; /* Adjust alignment */
+}
+
+.cart-items {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.order-summary {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem; /* Smaller font size */
+}
+
+.order-summary h2 {
+    margin-top: 0;
+    font-size: 1.2rem; /* Smaller title font size */
+    color: #333;
+}
+
+.order-summary p {
+    margin: 4px 0;
+    font-size: 1rem; /* Smaller font size */
+    color: #555;
+}
+
+.order-summary .total-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.order-summary .total-value {
+    font-size: 1.1rem; /* Slightly larger font for total values */
+    font-weight: bold;
+    color: #000;
+}
+
+.order-summary .rent-now-button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 1rem; /* Smaller font size */
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.order-summary .rent-now-button:hover {
+    background-color: #218838;
+}
+
+.cart-item {
+    position: relative; /* Make the item relative for absolute positioning of the icon */
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-control button {
+    background-color: #ddd;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.quantity-control span {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.remove-icon {
+    position: absolute;
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    color: #ff4b2b;
+    cursor: pointer;
+    font-size: 1.5rem; /* Adjust size of the icon */
+    transition: color 0.3s ease;
+}
+
+.remove-icon:hover {
+    color: #ff0000;
+}

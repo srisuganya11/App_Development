@@ -1,0 +1,154 @@
+.billing_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  font-size: 16px;
+  color: #555555; /* Darker color for better readability */
+}
+
+.yourCart_div {
+  border: 1px solid #e0e0e0; /* Softer border color */
+  padding: 20px;
+  margin-top: 2rem;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  background-color: #fafafa; /* Light background to distinguish the section */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.cart_img_content {
+  margin-bottom: 1.5rem; /* Increased margin for better spacing */
+}
+
+.food_img_price_des {
+  display: flex;
+  margin-bottom: 1.5rem; /* Increased margin for better spacing */
+  align-items: center; /* Vertically center-align content */
+}
+
+.food_img_price_des .cart_food_img {
+  width: 85px;
+  height: 51px;
+  overflow: hidden;
+  border-radius: 5px; /* Rounded corners for images */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+.food_img_price_des .cart_food_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.food_img_price_des .food_dec_flex {
+  margin-left: 1.5rem; /* Reduced margin for a tighter layout */
+  flex-grow: 1; /* Ensure the text takes up remaining space */
+}
+
+.food_img_price_des .food_dec_flex p {
+  color: #737373;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px; /* Slightly larger font for better readability */
+}
+
+.food_img_price_des .food_dec_flex p:last-child {
+  color: #d32f2f; /* Slightly darker red for better contrast */
+  font-weight: bold; /* Bold the price to make it stand out */
+}
+
+.cart_total {
+  border: 1px solid #e0e0e0; /* Softer border color */
+  padding: 15px 20px; /* Uniform padding */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 1rem; /* Added margin to separate from items */
+  background-color: #ffffff; /* White background for clarity */
+}
+
+.cart_total .price_total {
+  display: flex;
+  margin-bottom: 10px; /* Increased margin for better spacing */
+  justify-content: space-between;
+  align-items: center; /* Center-align content */
+}
+
+.cart_total .price_total p {
+  color: #555555; /* Darker color for better readability */
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600; /* Slightly bolder font */
+  font-size: 15px; /* Slightly larger font */
+}
+
+.total_btn_cart {
+  width: 100%;
+  background: #ac1734;
+  border-color: #ac1734;
+  padding: 12px 20px; /* Increased padding for a more substantial button */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center-align text and icon */
+  color: #ffffff;
+  font-weight: 600; /* Slightly bolder font */
+  font-family: "Montserrat", sans-serif;
+  border-radius: 8px; /* Rounded corners for the button */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.total_btn_cart:hover {
+  background-color: #92122c; /* Darker shade on hover */
+}
+
+.input_form .input_box_cart input,
+.input_form .input_box_cart textarea {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  padding: 10px 12px; /* Increased padding for better touch targets */
+  font-weight: 500; /* Slightly lighter font for inputs */
+  font-size: 14px; /* Slightly larger font for better readability */
+  resize: none;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px; /* Rounded corners for inputs */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for inputs */
+  background-color: #fafafa; /* Light background for inputs */
+}
+
+.input_form .input_box_cart {
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.mb_23px {
+  margin-bottom: 20px !important;
+}
+
+.text_center_button {
+  justify-content: center;
+}
+
+.input_form {
+  margin-top: 2rem;
+}
+
+.mt-12px {
+  margin-top: 12px !important;
+}
+
+.bg_green {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+  color: #ffffff; /* Ensure text is white for contrast */
+  border-radius: 8px; /* Rounded corners for buttons */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.bg_green:hover {
+  background-color: #388e3c !important; /* Darker shade on hover */
+}
+
+button {
+  outline: none !important;
+  cursor: pointer; /* Ensure buttons display a pointer cursor */
+}

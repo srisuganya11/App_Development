@@ -1,0 +1,37 @@
+/* Home.css */
+
+.home-container {
+  padding: 20px;
+}
+
+
+
+
+
+.gender-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gender-box {
+  flex: 1;
+  position: relative;
+  margin: 10px;
+}
+
+.gender-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gender-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}

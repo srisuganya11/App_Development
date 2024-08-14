@@ -1,0 +1,111 @@
+/* General styling for the signup background */
+/* General styling for the signup background */
+.signup-background {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Video background styling */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Container styling */
+.signup-container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Container styling */
+
+
+/* Heading styling */
+.signup-container h1 {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Input styling */
+.input_space {
+  margin-bottom: 1rem;
+}
+
+.input_space input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #495057;
+}
+
+.input_space input:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+/* Error message styling */
+.error-message {
+  color: #dc3545;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Link styling */
+.form-text {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #495057;
+}
+
+.form-text span {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.form-text span:hover {
+  color: #0056b3;
+}

@@ -1,0 +1,94 @@
+/* Sidebar Container */
+#sidebar {
+  width: 250px; /* Fixed width for the sidebar */
+  height: 100vh; /* Full height */
+  background-color: #343a40; /* Dark background color */
+  color: #fff; /* White text color */
+  position: fixed; /* Fixed positioning */
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease; /* Smooth transition */
+  transform: translateX(-100%); /* Initially hidden */
+}
+
+/* Responsive Sidebar */
+.sidebar-responsive {
+  transform: translateX(0); /* Show sidebar */
+}
+
+/* Sidebar Title */
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #495057; /* Divider line */
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 20px; /* Larger font size */
+  font-weight: bold; /* Bold font */
+}
+
+.icon_header {
+  margin-right: 10px; /* Spacing between icon and text */
+}
+
+/* Close Icon */
+.close_icon {
+  cursor: pointer;
+  font-size: 24px; /* Larger close icon */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.close_icon:hover {
+  color: #adb5bd; /* Light color on hover */
+}
+
+/* Sidebar List */
+.sidebar-list {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 16px; /* Font size for list items */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  cursor: pointer;
+}
+
+.sidebar-list-item:hover {
+  background-color: #495057; /* Background color on hover */
+}
+
+.sidebar-list-item .icon {
+  margin-right: 10px; /* Spacing between icon and text */
+  font-size: 20px; /* Icon size */
+}
+
+/* Logout Item */
+.logout {
+  margin-top: auto; /* Push logout item to the bottom */
+  border-top: 1px solid #495057; /* Divider line above logout */
+}
+
+.logout .icon {
+  color: #dc3545; /* Danger color for logout icon */
+}
+
+.logout:hover {
+  background-color: #495057; /* Background color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #sidebar {
+      width: 200px; /* Adjust width for smaller screens */
+  }
+}

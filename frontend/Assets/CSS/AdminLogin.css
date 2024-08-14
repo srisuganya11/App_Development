@@ -1,0 +1,52 @@
+/* Basic styles for Login form */
+.admin-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .admin-login-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .admin-login-content h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .admin-login-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+  
+  .admin-login-content input:focus {
+    border-bottom-color: #007bff;
+    outline: none;
+  }
+  
+  .admin-login-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .admin-login-content button:hover {
+    background-color: #0056b3;
+  }
+  

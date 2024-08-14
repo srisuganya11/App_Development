@@ -1,0 +1,34 @@
+.offers-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 40px auto; /* Center the container */
+}
+
+.offer-box {
+    flex: 1;
+    max-width: 450px; /* Fixed width */
+    height: 180px; /* Fixed height to keep it rectangular */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 0; /* Remove padding to ensure image fits perfectly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.3s ease; /* Add smooth transition for hover effect */
+    cursor: pointer; /* Add pointer cursor for clickable area */
+    overflow: hidden; /* Ensure image does not overflow */
+}
+
+.offer-box:hover {
+    transform: translateY(-5px); /* Lift the box slightly on hover */
+}
+
+.offer-image {
+    width: 100%; /* Make image cover the box width */
+    height: 100%; /* Make image cover the box height */
+    object-fit: cover; /* Ensure image covers the area properly */
+    border-radius: 10px; /* Add border radius to match the box */
+}

@@ -1,0 +1,107 @@
+/* src/Assets/CSS/About.css */
+.about-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-container h2 {
+    font-size: 1.5rem;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.about-container p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-container ul, .about-container ol {
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.about-container ul li, .about-container ol li {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-container ul li strong, .about-container ol li strong {
+    color: #333;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+    position: relative;
+}
+
+.timeline-step {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+.timeline-step:hover {
+    transform: translateY(-5px); /* Lift the box slightly on hover */
+}
+.timeline-step::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    background: #ff6600;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline-step:not(:first-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 20px;
+    height: 2px;
+    background: #ff6600;
+    transform: translateY(-50%);
+}
+
+.timeline-step h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.timeline-step p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}

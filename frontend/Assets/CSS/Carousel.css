@@ -1,0 +1,101 @@
+/* Carousel container styles */
+.carousel {
+    position: relative;
+    width: 100%; /* Set the width to 100% to take full width of the container */
+    height: 350px; /* Set the height as needed */
+    overflow: hidden;
+    background-color: rgb(246, 243, 240);
+    margin: 0 auto; /* Center the carousel horizontally if needed */
+}
+
+/* Inner container styles */
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+/* Individual carousel item styles */
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex; /* Use flexbox to align items horizontally */
+}
+
+/* Carousel content styles */
+.carousel-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+    height: 100%;
+    width: 100%;
+}
+
+/* Text area styles */
+.carousel-text {
+    flex: 1; /* Take half of the width */
+    text-align: left;
+    margin-right: 10px; /* Add some space between text and image */
+    margin-left: 5%; /* Move text area to the left */
+}
+
+/* Text styles */
+.carousel-text p {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    color: #333; /* Set text color */
+    margin-bottom: 10px; /* Add space below the text */
+}
+
+/* Shop Now button styles */
+/* Shop Now button styles */
+.shop-now-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Reduce padding */
+    cursor: pointer;
+    font-size: 14px; /* Decrease font size */
+    border-radius: 4px; /* Adjust border radius */
+    font-weight: bold; /* Keep button text bold */
+    width: 120px; /* Set a specific width */
+}
+
+.shop-now-button:hover {
+    background-color: #ff4500;
+}
+
+/* Carousel image styles */
+.carousel-image {
+    flex: 1; /* Take half of the width */
+    overflow: hidden; /* Hide overflow */
+}
+
+.carousel-image img {
+    width: 100%; /* Make image take full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Dot navigation styles */
+.carousel-dots {
+    position: absolute;
+    bottom: 10px; /* Position dots below the carousel */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background-color: #ff6600;
+}

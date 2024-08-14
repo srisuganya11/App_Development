@@ -1,0 +1,69 @@
+.manage-users-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px;
+    position: fixed; /* Fix the sidebar to the left end */
+    height: 100vh; /* Make the sidebar take the full height of the viewport */
+    left: 0;
+    top: 0;
+    background-color: #f4f4f4;
+    padding: 20px;
+    /* Add other styles for the sidebar if needed */
+  }
+  
+  .manage-users-content {
+    flex: 1;
+    padding: 20px;
+    margin-left:320px; /* Add some space to the left to accommodate the fixed sidebar */
+    max-width: 800px; /* Make the content area smaller */
+    /* Add other styles for the content area if needed */
+  }
+  
+  .user-section,
+  .login-details-section {
+    margin-bottom: 20px;
+  }
+  
+  .user-table,
+  .login-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .user-table th,
+  .user-table td,
+  .login-details-table th,
+  .login-details-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .user-table th,
+  .login-details-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .user-table tr:nth-child(even),
+  .login-details-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .user-table tr:hover,
+  .login-details-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
